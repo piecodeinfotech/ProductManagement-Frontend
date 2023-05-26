@@ -20,4 +20,5 @@ describe('CityComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  
 });
