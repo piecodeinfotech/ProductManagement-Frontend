@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { CountryComponent } from './pages/country/country.component';
+import { CityComponent } from './pages/city/city.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { CountryComponent } from './pages/country/country.component';
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
-    CountryComponent
+    CountryComponent,
+    CityComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
