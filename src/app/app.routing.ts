@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { CityComponent } from './pages/city/city.component';
 
 const routes: Routes =[
   {
@@ -15,6 +16,8 @@ const routes: Routes =[
     path: '',
     component: AdminLayoutComponent,
     children: [
+
+      { path: 'city',component: CityComponent },
       {
         path: '',
         loadChildren: () => import('src/app/layouts/admin-layout/admin-layout.module').then(m => m.AdminLayoutModule)
