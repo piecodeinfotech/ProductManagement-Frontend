@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { CountryComponent } from './pages/country/country.component';
 import { CityComponent } from './pages/city/city.component';
+import { StateComponent } from './pages/state/state.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CityComponent } from './pages/city/city.component';
     AdminLayoutComponent,
     AuthLayoutComponent,
     CountryComponent,
-    CityComponent
+    CityComponent,
+    StateComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
