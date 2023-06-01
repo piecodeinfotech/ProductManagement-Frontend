@@ -1,0 +1,30 @@
+<div mat-dialog-title>
+    <h1>City Form</h1>
+</div>
+<mat-dialog-content style="overflow: hidden;">
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput type="text" placeholder="Ex. Technical" formControlName="name">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>StateId</mat-label>
+                <input matInput placeholder="Ex. Babaji" formControlName="stateId">
+            </mat-form-field>
+        </div>
+<div class="row">
+    <mat-form-field appearance="outline">
+        <mat-label>Pincode</mat-label>
+        <input matInput placeholder="Ex. Babaji" formControlName="pincode">
+    </mat-form-field>
+</div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+    </div>
+</form>
+</mat-dialog-content>
+
