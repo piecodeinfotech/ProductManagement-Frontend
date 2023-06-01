@@ -65,6 +65,27 @@ export class AuthService {
 
 
 
+
+
+  addCategory(data: any): Observable<any> {
+    return this.httpClient.post(`${this.API}Category`, data);
+  }
+
+  updateCategory(id: number, data: any): Observable<any> {
+    return this.httpClient.put(`${this.API}Category/${id}`, data);
+  }
+
+  getCategoryList(): Observable<any> {
+    return this.httpClient.get(`${this.API}Category`);
+  }
+  
+  deleteCategory(id: number): Observable<any> {
+    return this.httpClient.delete(`${this.API}Category/${id}`);
+  }
+
+
+
+
   
   openSnackBar(message: string, action: string = 'ok') {
     this._snackBar.open(message, action, {
