@@ -7,6 +7,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 import { CityComponent } from './pages/city/city.component';
 import { StateComponent } from './pages/state/state.component';
+import { CategoryComponent } from './pages/category/category.component';
 
 const routes: Routes =[
   {
@@ -20,6 +21,7 @@ const routes: Routes =[
 
       { path: 'city',component: CityComponent },
       { path: 'state',component: StateComponent },
+      { path: 'category',component: CategoryComponent },
 
       {
         path: '',

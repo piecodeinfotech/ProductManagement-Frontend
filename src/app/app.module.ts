@@ -32,6 +32,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AddEditCountryComponent } from './pages/add-edit-country/add-edit-country.component';
 import { AddEditStateComponent } from './pages/add-edit-state/add-edit-state.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { AddEditCategoryComponent } from './pages/add-edit-category/add-edit-category.component';
 
 @NgModule({
   imports: [
@@ -67,7 +69,9 @@ import { AddEditStateComponent } from './pages/add-edit-state/add-edit-state.com
     StateComponent,
     AddEditCityComponent,
     AddEditCountryComponent,
-    AddEditStateComponent
+    AddEditStateComponent,
+    CategoryComponent,
+    AddEditCategoryComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
