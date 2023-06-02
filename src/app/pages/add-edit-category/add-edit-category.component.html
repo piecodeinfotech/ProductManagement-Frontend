@@ -1,6 +1,5 @@
-<p>add-edit-category works!</p>
 <div mat-dialog-title>
-    <h1>Category Form</h1>
+    <h1 style="color: #000;">Category Form</h1>
 </div>
 <mat-dialog-content style="overflow: hidden;">
     <form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
@@ -10,7 +9,7 @@
                     <mat-label>Category Name</mat-label>
                     <input matInput type="text" placeholder="Ex. Technical" formControlName="categoryName">
                 </mat-form-field>
-                <mat-form-field appearance="outline">
+                <mat-form-field appearance="outline" class="ml-3">
                     <mat-label>Code</mat-label>
                     <input matInput placeholder="Ex. Babaji" formControlName="code">
                 </mat-form-field>
